@@ -1,0 +1,17 @@
+{
+  "features": [
+    "activity_days",
+    "driving_days",
+    "activity_to_driving_ratio",
+    "drives_per_day",
+    "sessions_per_day",
+    "percent_days_driving",
+    "n_days_after_onboarding",
+    "total_sessions",
+    "duration_minutes_drives",
+    "km_per_drive",
+    "device_iPhone"
+  ],
+  "device_col": "device_iPhone",
+  "threshold": 0.37732151954078047
+}
