@@ -131,7 +131,7 @@ Used high-confidence predictions from the unlabeled 700 as pseudo-labels:
 
 | Metric | v1 | v2 | Change |
 |---|---|---|---|
-| ROC-AUC | 0.7412 | **0.7620** | **++0.0208** |
+| ROC-AUC | 0.7412 | **0.7620** | **+0.0208** |
 | F1 (Churn) | 0.4152 | **0.4455** | **+0.0303** |
 | Recall (Churn) | 0.8383 | 0. 0.7717  | -0.0666 |
 
@@ -144,7 +144,7 @@ Applied `shap.LinearExplainer` to the winning LR model:
 - **Beeswarm plot:** feature impact direction and distribution
 - **Waterfall plot:** single-user explanation for highest-risk churner
 
----
+
 
 ## Key Findings
 
@@ -154,7 +154,6 @@ Applied `shap.LinearExplainer` to the winning LR model:
 - **Device type (iPhone vs Android)** was not a statistically significant predictor (Chi-square p > 0.05)
 - **Churn precision (~29–31%) across all models** reflects the difficulty of this problem — the 18/82 imbalance makes false positives inevitable at high recall
 
----
 
 ## Setup
 
