@@ -104,6 +104,23 @@ CopyCopied!
 
 **Winner: Logistic Regression** — confirmed by 5-fold CV (0.7526 ± 0.0151)
 
+## Handling Class Imbalance
+The dataset exhibited significant class imbalance, with retained customers representing ~82% of observations versus ~18% churned. 
+To address this, two approaches were evaluated: SMOTE  and scale_pos_weight parameter
+
+##Observations
+scale_pos_weight (set to ~4.6, the ratio of retained to churned customers)encouraged the model to penalize missed churn predictions more heavily.
+While this improved recall slightly, it did not meaningfully improve precision or overall F1 score, and offered less control over the training data distribution itself.
+
+SMOTE synthetically oversampled the minority churn class in the training set to achieve a balanced distribution. 
+As expected, this introduced a trade-off: precision decreased marginally (~1%), while recall improved, resulting in the model identifying a greater proportion of true churners.
+More aggressive churn prediction leads to more false positives alongside more true positives.
+
+### Decision
+SMOTE was selected as the final imbalance-handling strategy. Despite the minor precision trade-off, it produced more consistent recall across all three models. 
+Given that the primary business objective is to **identify at-risk customers before they churn**, maximising recall was prioritised over precision.
+
+
 #### 5-Fold Cross-Validation ROC-AUC
 
 | Model | Mean | Std |
