@@ -1,7 +1,7 @@
 # Waze User Churn Prediction
 
 A machine learning pipeline to predict user churn on the Waze navigation platform.
-Built with Logistic Regression, Random Forest, and XGBoost — with semi-supervised
+Built with Logistic Regression, Random Forest, and XGBoost, with semi-supervised
 self-training on 700 unlabeled users to improve generalization.
 
 ## Project Structure
