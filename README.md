@@ -117,7 +117,7 @@ As expected, this introduced a trade-off: precision decreased marginally (~1%), 
 More aggressive churn prediction leads to more false positives alongside more true positives.
 
 ### Decision
-SMOTE was selected as the final imbalance-handling strategy. Despite the minor precision trade-off, it produced more consistent recall across all three models. 
+SMOTE was selected as the final imbalance handling strategy. Despite the minor precision trade-off, it produced more consistent recall across all three models. 
 Given that the primary business objective is to **identify at-risk customers before they churn**, maximising recall was prioritised over precision.
 
 
