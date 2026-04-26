@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 import json
 
-# ── Load artifacts ──
+#  Load artifacts
 model = joblib.load('model.joblib')
 scaler = joblib.load('scaler.joblib')
 
@@ -48,7 +48,7 @@ st.set_page_config(page_title="Waze Churn Predictor", page_icon="🚗", layout="
 st.title("Waze User Churn Predictor")
 st.markdown("Upload a CSV of user data to predict who's likely to churn.")
 
-# ── Sidebar: manual single-user prediction ──
+# Sidebar: manual single-user prediction 
 st.sidebar.header("🔍 Single User Prediction")
 
 with st.sidebar.form("single_user"):
